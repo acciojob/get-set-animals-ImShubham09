@@ -8,7 +8,8 @@ class Animal {
         return this._species;
     }
     
-    makesound() {
+    // Corrected method name to makeSound
+    makeSound() {
         console.log(`The ${this.species} makes a sound`);
     }
 }
@@ -33,6 +34,7 @@ class Cat extends Animal {
     }
 }
 
+// Exposing classes for testing in the browser
 window.Animal = Animal;
 window.Dog = Dog;
 window.Cat = Cat;
