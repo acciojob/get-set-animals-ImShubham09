@@ -1,9 +1,36 @@
 //complete this code
-class Animal {}
+class Animal {
+	constructor(species: string){}
 
-class Dog extends Animal {}
+	 get species() {
+    return this.species;
+  }
 
-class Cat extends Animal {}
+	  makeSound() {
+    console.log(`The ${this.species} makes a sound`);
+  }
+}
+
+class Dog extends Animal {
+	  constructor(species: string) {
+    super(species); // Call the parent class constructor
+  }
+
+	 bark() {
+    console.log("woof");
+  }
+}
+
+class Cat extends Animal {
+	constructor(species: string) {
+    super(species); // Call the parent class constructor
+  }
+
+  // Method for purring
+  purr() {
+    console.log("purr");
+  }
+}
 
 // Do not change the code below this line
 window.Animal = Animal;
